@@ -1,13 +1,17 @@
 import { config, ContextInterface, Response } from 'stix';
-import { AbstractGate } from 'stix-gates';
 import jsonwebtoken from 'jsonwebtoken';
 import { SecurityConfig, SecurityScheme } from '../SecurityConfig';
+import { SecurityGate } from './SecurityGate';
 
 export const configKey = 'bearer';
 
-export class BearerGate extends AbstractGate {
+export class BearerGate extends SecurityGate {
   @config('security')
   private config: SecurityConfig;
+
+  public static getConfigKey(): string {
+    return configKey;
+  }
 
   public passThrough(ctx: ContextInterface): Response | void {
     const bearerScheme: SecurityScheme = this.config.schemes[configKey];
