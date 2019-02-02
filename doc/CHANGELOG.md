@@ -1,3 +1,12 @@
+## [0.0.4](https://github.com/SpoonX/stix-security/compare/v0.0.3...v0.0.4) (2019-02-02)
+
+
+### Features
+
+* **project:** add getConfigKey ([6c11c81](https://github.com/SpoonX/stix-security/commit/6c11c81))
+
+
+
 ## [0.0.3](https://github.com/SpoonX/stix-security/compare/v0.0.2...v0.0.3) (2019-01-31)
 
 
