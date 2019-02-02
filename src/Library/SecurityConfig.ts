@@ -1,7 +1,7 @@
 import  { SecuritySchemeObject } from 'openapi3-ts';
 
 export type SecurityScheme = {
-  scheme: SecuritySchemeObject;
+  scheme?: SecuritySchemeObject;
   options: BearerOptions;
 };
 
