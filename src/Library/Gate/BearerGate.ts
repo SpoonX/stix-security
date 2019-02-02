@@ -15,7 +15,7 @@ export class BearerGate extends SecurityGate {
 
   public passThrough(ctx: ContextInterface): Response | void {
     const bearerScheme: SecurityScheme = this.config.schemes[configKey];
-    const Authorization: string = ctx.headers.Authorization;
+    const Authorization: string = ctx.headers.authorization;
 
     if (!Authorization) {
       return this.unauthorizedResponse('missing_auth_header');
