@@ -32,8 +32,6 @@
     "postpublish": "git push upstream master && git push upstream --tags"
   },
   "devDependencies": {
-    "@types/jsonwebtoken": "^8.3.0",
-    "openapi3-ts": "^1.2.0",
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.15.0",
     "tslint-eslint-rules": "^5.4.0",
@@ -44,6 +42,8 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@types/jsonwebtoken": "^8.3.0",
+    "openapi3-ts": "^1.2.0",
     "jsonwebtoken": "^8.4.0",
     "stix": "^4.3.2",
     "stix-gates": "^3.0.5"
