@@ -1,3 +1,12 @@
+## [0.0.7](https://github.com/SpoonX/stix-security/compare/v0.0.6...v0.0.7) (2019-02-02)
+
+
+### Bug Fixes
+
+* **BearerGate:** lower case header ([9074caa](https://github.com/SpoonX/stix-security/commit/9074caa))
+
+
+
 ## [0.0.6](https://github.com/SpoonX/stix-security/compare/v0.0.5...v0.0.6) (2019-02-02)
 
 
