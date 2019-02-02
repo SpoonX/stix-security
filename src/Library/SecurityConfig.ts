@@ -1,6 +1,9 @@
 import  { SecuritySchemeObject } from 'openapi3-ts';
 
-export type SecurityScheme = SecuritySchemeObject & Partial<{ options: BearerOptions }>;
+export type SecurityScheme = {
+  scheme: SecuritySchemeObject;
+  options: BearerOptions;
+};
 
 export interface SecurityConfig {
   schemes: {
@@ -11,4 +14,3 @@ export interface SecurityConfig {
 export interface BearerOptions {
   secret: string;
 }
-
