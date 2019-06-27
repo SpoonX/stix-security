@@ -14,6 +14,10 @@ export class BearerGate extends SecurityGate {
   }
 
   public passThrough(ctx: ContextInterface): Response | void {
+    return this.validate(ctx);
+  }
+
+  public validate(ctx: ContextInterface) {
     const bearerScheme: SecurityScheme = this.config.schemes[configKey];
     const Authorization: string = ctx.headers.authorization;
 
